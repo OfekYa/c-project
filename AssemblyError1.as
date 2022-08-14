@@ -1,0 +1,36 @@
+;file ps.as 
+.entry LIST 
+.extern W 
+
+MAIN:		add		r3	,	r1 
+LOOP:		prn	#48	
+LOW :		prn	#5	
+		prn	#	48	
+lea	STR,	r6 	
+MAFIN:add	r3	,r4 
+MAIN:		add	r3,6
+inc	r6 
+mov	r3,W	 
+bne	END[r15], r7	
+sub	r16	,r4	 
+bne	END	
+cmp	vall,	#-6,
+cmp	val,	#-6
+bne	END[r1%5]	
+dec   1K
+
+some chars..
+
+.entry			 MAINN 	
+sub	LOOP[10],	r14	
+sub	LOOP[r10],	r14	
+sub	LOOP[r5],	r14	
+END:    stop	
+STR:		.string	"abcd"
+
+LIST:		.data	6,7, 	,8,	    -9
+.data	-100	
+.entry K 
+1K:		.data	31
+.extern vall
+.entry val
